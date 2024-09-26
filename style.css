@@ -5,6 +5,10 @@ html, body {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -99,6 +103,7 @@ html, body {
 .qr-section .qr-container .form-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .qr-section .qr-container .form-container .form-label {
   font-family: Loos Extended, Roboto, serif;
