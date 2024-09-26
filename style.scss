@@ -294,7 +294,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 508px) {
   .header {
     .container {
       padding: 40px 0 32px;
@@ -323,7 +323,7 @@ p {
 
 
   .main-section {
-    overflow-x:hidden ;
+    overflow-x: hidden;
 
     .container {
 
@@ -423,7 +423,8 @@ p {
       border-top-right-radius: 40px;
 
       .footer-container {
-padding: 0 11px;
+        padding: 0 11px;
+
         & img {
         }
       }
