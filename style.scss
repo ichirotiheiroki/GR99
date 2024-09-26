@@ -48,6 +48,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+
 }
 
 p {
@@ -80,7 +81,8 @@ p {
       display: flex;
       align-self: center;
       justify-self: center;
-      justify-content: center;
+      width: 100%;
+      justify-content: space-between;
       max-width: 1320px;
 
       .img-container {
@@ -92,7 +94,7 @@ p {
       }
 
 
-      & .slogan {
+      .slogan {
         font-family: Geist Mono, Variable, Roboto, serif;
         font-size: 20px;
         font-weight: 300;
@@ -143,12 +145,29 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 0.8;
       }
 
       .button {
         position: absolute;
         bottom: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         z-index: 2;
+        background: linear-gradient(90deg, #A2E8FC 0%, #98B8BA 50%, #918675 100%);
+        border: 2px solid #000000;
+        height: auto;
+        padding: 10px 40px 10px 40px;
+        gap: 10px;
+        border-radius: 2px;
+        font-family: Loos Extended, Roboto, serif;
+        font-size: 32px;
+        font-weight: 360;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+
       }
 
 
@@ -183,6 +202,7 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-end;
 
       .form-label {
         font-family: Loos Extended, Roboto, serif;
@@ -199,18 +219,27 @@ p {
         flex-direction: column;
         align-items: end;
         gap: 24px;
+        width: 452px;
 
-        & input {
-          height: 30px;
-          width: 452px;
+        .input-container {
+          width: 100%;
           padding: 10px 24px;
-          font-family: Loos Extended, Roboto, serif;
-          font-size: 24px;
-          font-weight: 360;
-          line-height: 30.24px;
-          text-align: left;
+          border: 1px solid #000000;
+          border-radius: 2px;
+          box-sizing: border-box;
 
+          & input {
+            width: 100%;
+            height: 30px;
+            font-family: Loos Extended, Roboto, serif;
+            font-size: 24px;
+            font-weight: 360;
+            line-height: 30.24px;
+            text-align: left;
+            border: none;
+          }
         }
+
 
         .form-button {
           height: 50px;
@@ -247,6 +276,7 @@ p {
     background-color: black;
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
+    overflow: hidden;
 
     .footer-container {
       display: flex;
@@ -263,3 +293,140 @@ p {
 
 }
 
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      padding: 40px 0 32px;
+
+      .abs-1 {
+        width: 160px;
+        top: 91px;
+        left: -50px;
+      }
+
+      .header-container {
+        align-items: center;
+        flex-direction: column;
+        padding: 0 32px;
+
+        .slogan {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 19.84px;
+          text-align: center;
+
+        }
+      }
+    }
+  }
+
+
+  .main-section {
+
+    .container {
+
+      .abs-2 {
+        height: 142px;
+        top: -20px;
+        right: -20px;
+      }
+
+      .main-container {
+        height: 470px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+
+        .main-label {
+          top: 112px;
+          font-size: 17px;
+          font-weight: 360;
+          line-height: 21.42px;
+
+        }
+
+        .bg-img {
+          object-fit: cover;
+        }
+
+        .button {
+          padding: 8px 24px;
+          font-size: 20px;
+          font-weight: 360;
+          line-height: 25.2px;
+          bottom: 56px;
+
+        }
+
+
+        &::before {
+        }
+      }
+    }
+  }
+
+
+  .qr-section {
+    overflow: hidden;
+    padding: 56px 32px 124px;
+
+    .qr-container {
+      flex-direction: column;
+      gap: 124px;
+      padding: 0 32px;
+
+      .form-container {
+        align-items: center;
+
+        .form-label {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 38.4px;
+          margin-bottom: 32px;
+
+        }
+
+        .form {
+          gap: 16px;
+          align-items: inherit;
+
+          .input-container {
+
+            & input {
+              min-width: 0;
+            }
+          }
+
+          .form-button {
+            width: 100%;
+            margin-top: 16px;
+          }
+        }
+      }
+
+      .abs-3 {
+        bottom: -100px;
+        top: inherit;
+        right: -60px;
+      }
+    }
+  }
+
+
+  .footer {
+
+    .container {
+
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+
+      .footer-container {
+padding: 0 11px;
+        & img {
+        }
+      }
+    }
+
+  }
+}
