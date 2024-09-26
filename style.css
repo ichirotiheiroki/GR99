@@ -265,6 +265,9 @@ p {
     line-height: 19.84px;
     text-align: center;
   }
+  .main-section {
+    overflow-x: hidden;
+  }
   .main-section .container .abs-2 {
     height: 142px;
     top: -20px;
