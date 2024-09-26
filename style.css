@@ -315,6 +315,7 @@ p {
   .qr-section .qr-container .form-container .form {
     gap: 16px;
     align-items: inherit;
+    width: 100%;
   }
   .qr-section .qr-container .form-container .form .input-container input {
     min-width: 0;
