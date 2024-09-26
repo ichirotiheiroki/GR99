@@ -1,4 +1,8 @@
-document.getElementById('submitButton').addEventListener('submit', function (event) {
+const submitForm = document.getElementById('submitForm');
+const formLabel = document.getElementById('formLabel');
+
+
+submitForm.addEventListener('submit', function (event) {
     event.preventDefault();
     solve();
 })
@@ -19,7 +23,9 @@ function solve() {
             .then(response => response.text())
             .then(data => {
                 console.log(data);
-                alert('Данные успешно отправлены.');
+
+                submitForm.style.display = 'none';
+                formLabel.innerHTML = 'заявка принята,<br/> с вами свяжутся';
             })
             .catch(error => {
                 console.error('Ошибка:', error);

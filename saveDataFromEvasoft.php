@@ -1,4 +1,7 @@
 <?php
+
+header("Access-Control-Allow-Origin: https://innergy.xn--80ad1blgl2d.xn--p1ai");
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $emailPhone = isset($_POST['emailPhone']) ? $_POST['emailPhone'] : '';
@@ -6,7 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!empty($name) && !empty($emailPhone)) {
         $file = 'data.txt';
 
-        $data = "Name: $name, Email/Phone: $emailPhone" . PHP_EOL;
+        $currentDateTime = date('Y-m-d H:i:s');
+
+        $data = "Date/Time: $currentDateTime, Name: $name, Email/Phone: $emailPhone" . PHP_EOL;
 
         if (file_put_contents($file, $data, FILE_APPEND | LOCK_EX)) {
             echo "Данные успешно записаны.";
