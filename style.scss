@@ -2,6 +2,47 @@
 
 }
 
+@font-face {
+  font-family: "Loos Extended";
+  src: url("assets/fonts/Loos_Extended_Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Loos Extended";
+  src: url("assets/fonts/Loos_Extended_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Loos Extended";
+  src: url("assets/fonts/Loos_Extended_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Loos Extended";
+  src: url("assets/fonts/Loos_Extended_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Loos Extended";
+  src: url("assets/fonts/Loos_Extended_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("assets/fonts/GeistMono-Regular.woff2") format("woff2");
+}
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -43,7 +84,6 @@ p {
       max-width: 1320px;
 
       .img-container {
-        flex: 1;
 
         & img {
           height: 58px;
@@ -52,13 +92,14 @@ p {
       }
 
 
-      & p {
-        flex: 1;
+      & .slogan {
         font-family: Geist Mono, Variable, Roboto, serif;
         font-size: 20px;
         font-weight: 300;
         line-height: 24.8px;
         text-align: right;
+        white-space: break-spaces;
+        width: 100%;
 
       }
     }
