@@ -328,6 +328,7 @@ p {
     bottom: -100px;
     top: inherit;
     right: -60px;
+    z-index: -1;
   }
   .footer .container {
     border-top-left-radius: 40px;
