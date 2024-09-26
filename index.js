@@ -1,11 +1,18 @@
 const submitForm = document.getElementById('submitForm');
 const formLabel = document.getElementById('formLabel');
+const findOutFirst = document.getElementById('findOutFirst');
+const qrSection = document.getElementById('qrSection');
 
 
 submitForm.addEventListener('submit', function (event) {
     event.preventDefault();
     solve();
 })
+
+
+findOutFirst.addEventListener('click', function () {
+    qrSection.scrollIntoView({behavior: 'smooth'});
+});
 
 
 function solve() {
