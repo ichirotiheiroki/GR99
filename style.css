@@ -18,11 +18,17 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 80px 0;
 }
 .header .container {
   display: flex;
   justify-content: center;
+  position: relative;
+  padding: 80px 0;
+}
+.header .container .abs-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .header .container .header-container {
   display: flex;
@@ -51,7 +57,15 @@ p {
   display: flex;
   justify-content: center;
 }
-.main-section .main-container {
+.main-section .container {
+  position: relative;
+}
+.main-section .container .abs-2 {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.main-section .container .main-container {
   height: 872px;
   display: flex;
   justify-content: center;
@@ -60,7 +74,7 @@ p {
   border-bottom-right-radius: 120px;
   overflow: hidden;
 }
-.main-section .main-container .main-label {
+.main-section .container .main-container .main-label {
   position: absolute;
   align-self: center;
   font-family: Loos Extended, Roboto, serif;
@@ -68,17 +82,17 @@ p {
   font-weight: 360;
   z-index: 2;
 }
-.main-section .main-container .bg-img {
+.main-section .container .main-container .bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.main-section .main-container .button {
+.main-section .container .main-container .button {
   position: absolute;
   bottom: 200px;
   z-index: 2;
 }
-.main-section .main-container::before {
+.main-section .container .main-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,6 +114,7 @@ p {
   width: 100%;
   max-width: 1320px;
   justify-content: space-between;
+  position: relative;
 }
 .qr-section .qr-container .form-container {
   display: flex;
@@ -140,6 +155,11 @@ p {
   line-height: 30.24px;
   text-align: center;
   text-transform: uppercase;
+}
+.qr-section .qr-container .abs-3 {
+  position: absolute;
+  top: -400px;
+  right: -130px;
 }
 
 .footer {
