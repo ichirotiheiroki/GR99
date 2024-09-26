@@ -7,7 +7,26 @@ html, body {
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1020px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header .container .header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .header-container .img-container {
+  flex: 1;
+}
+.header .container .header-container .img-container img {
+  height: 58px;
+}
+.header .container .header-container p {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
