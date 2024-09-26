@@ -18,6 +18,7 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 80px 0;
 }
 .header .container {
   display: flex;
