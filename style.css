@@ -99,7 +99,8 @@ p {
   top: -80px;
 }
 .main-section .container .main-container {
-  height: 872px;
+  height: 100vw;
+  max-height: 872px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -120,6 +121,7 @@ p {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
+  object-position: center;
 }
 .main-section .container .main-container .button {
   position: absolute;
@@ -157,6 +159,7 @@ p {
   display: flex;
   padding: 160px 0;
   justify-content: center;
+  overflow-x: hidden;
 }
 .qr-section .qr-container {
   display: flex;
@@ -245,7 +248,16 @@ p {
   opacity: 0.1;
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 1400px) {
+  .qr-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .qr-section .qr-container .qr-img {
+    width: 33.3333333333vw;
+  }
+}
+@media screen and (max-width: 768px) {
   .header .container {
     padding: 40px 0 32px;
   }
@@ -302,6 +314,9 @@ p {
     flex-direction: column;
     gap: 124px;
     padding: 0 32px;
+  }
+  .qr-section .qr-container .qr-img {
+    width: 100%;
   }
   .qr-section .qr-container .form-container {
     align-items: center;
