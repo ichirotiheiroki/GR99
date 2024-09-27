@@ -214,6 +214,12 @@ p {
         line-height: 64px;
         text-align: right;
         text-transform: uppercase;
+
+        .form-label__sub_text {
+          font-family: Roboto, serif;
+
+          font-size: 17px;
+        }
       }
 
 
@@ -403,6 +409,10 @@ p {
           font-weight: 400;
           line-height: 38.4px;
           margin-bottom: 32px;
+
+          .form-label__sub_text {
+            font-size: 12px;
+          }
 
         }
 
