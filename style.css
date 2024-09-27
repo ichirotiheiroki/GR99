@@ -184,6 +184,7 @@ p {
 }
 .qr-section .qr-container .form-container .form-label .form-label__sub_text {
   font-family: "Roboto", serif;
+  font-weight: 300;
   font-size: 17px;
 }
 .qr-section .qr-container .form-container .form {
