@@ -183,7 +183,7 @@ p {
   text-transform: uppercase;
 }
 .qr-section .qr-container .form-container .form-label .form-label__sub_text {
-  font-family: Roboto, serif;
+  font-family: "Roboto", serif;
   font-size: 17px;
 }
 .qr-section .qr-container .form-container .form {
