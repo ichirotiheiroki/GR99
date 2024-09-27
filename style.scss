@@ -159,6 +159,7 @@ p {
         z-index: 2;
         background: linear-gradient(90deg, #A2E8FC 0%, #98B8BA 50%, #918675 100%);
         border: 2px solid #000000;
+        color: black;
         height: auto;
         padding: 10px 40px 10px 40px;
         gap: 10px;
@@ -253,12 +254,15 @@ p {
         .form-button {
           height: 50px;
           background: linear-gradient(90deg, #A2E8FC 0%, #98B8BA 50%, #918675 100%);
+          border: 1px solid #000000;
+          border-radius: 2px;
           width: 312px;
           font-family: Loos Extended, Roboto, serif;
           font-size: 24px;
           font-weight: 360;
           line-height: 30.24px;
           text-align: center;
+          color: black;
           text-transform: uppercase;
         }
       }
@@ -425,12 +429,20 @@ p {
 
             & input {
               min-width: 0;
+              font-size: 16px;
+              font-weight: 360;
+              line-height: 20.16px;
+
             }
           }
 
           .form-button {
             width: 100%;
             margin-top: 16px;
+            font-size: 20px;
+            font-weight: 360;
+            line-height: 25.2px;
+
           }
         }
       }
