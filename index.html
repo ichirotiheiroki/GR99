@@ -1,75 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
-    <link rel="stylesheet" href="style.css?ver=15">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>99iNNERGY</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-<header class="header">
-
-    <div class="container">
-        <div class="header-container">
-            <div class="img-container">
-                <img src="assets/img/logo.png" alt="">
-            </div>
-            <span class="slogan">Твоё состояние - твой актив, такой же, как твой капитал. <br/> Вопрос в том, есть ли у тебя стратегия инвестиций в него?</span>
-        </div>
-
-        <img class="abs-1" src="assets/img/abstract/abs-1.svg" alt="">
+<header class="header flex">
+    <div class="container flex">
+        <img class="logo" src="assets/images/logo.png" alt="">
     </div>
 </header>
-<section class="main-section">
+<section class="hero-section">
     <div class="container">
-        <div class="main-container">
-            <img class="bg-img" src="assets/img/bg.jpeg" alt="">
-            <p class="main-label">#инвестируйвсостояние</p>
-            <button id="findOutFirst" class="button">
-                узнай первым
-            </button>
+        <div class="left">
+            <h1>
+                Инвестируй
+                в своё состояние
+            </h1>
+            <p><span>Энергия</span> — ваш главный актив. Это не просто ресурс, а фундамент вашего успеха.</p>
+            <button>Выбрать стратегию</button>
         </div>
-        <img class="abs-2" src="assets/img/abstract/abs-2.svg" alt="">
+        <div class="right">
+            <img class="illustration" src="assets/images/illustration.png" alt="">
+        </div>
     </div>
 </section>
-<section id="qrSection" class="qr-section">
-    <div class="qr-container">
-        <img class="qr-img" src="assets/img/qr.svg" alt="">
-        <div class="form-container">
-            <p id="formLabel" class="form-label">Твоя долгосрочная инвестиционная <br> стратегия <br> <span
-                    class="form-label__sub_text">Капитализация по вкладу с высокой энергичностью</span>
-            </p>
-
-            <form class="form" id="submitForm">
-                <div class="input-container">
-
-                    <input type="text" placeholder="ИМЯ" id="name">
-                </div>
-                <div class="input-container">
-
-                    <input type="text" placeholder="ПОЧТА ИЛИ ТЕЛЕФОН" id="email">
-                </div>
-
-                <button id="formButton" type="submit" class="form-button">подписаться</button>
-            </form>
+<section class="reasons-section">
+    <div class="container">
+        <div class="reason-block">
+            <span class="line"></span>
+            <h3>Интенсивное инвестирование</h3>
+            <p>Занимайтесь активным спортом для укрепления тела и духа. Бег, тренировки с весами, кардиотренировки — это
+                активы, которые приносят рост вашей энергии.</p>
         </div>
-        <img class="abs-3" src="assets/img/abstract/abs-3.svg" alt="">
+
+        <div class="reason-block">
+            <span class="line"></span>
+            <h3>Долгосрочные вложения</h3>
+            <p>Йога, пилатес и растяжка — мягкие практики, которые поддержат ваш баланс и устойчивость.</p>
+        </div>
+
+        <div class="reason-block">
+            <span class="line"></span>
+            <h3>Умные активы
+                для восстановления</h3>
+            <p>Спа, криозона и баня — время на восстановление тела и ума, которые вернут энергию на новый уровень.</p>
+        </div>
+    </div>
+
+</section>
+<section class="form-section">
+    <div class="container">
+        <form class="form" id="submitForm">
+            <div class="title">
+                <h2>Получить <br> доступ</h2>
+            </div>
+
+            <div class="input-container">
+                <input type="text" placeholder="Имя" id="name">
+            </div>
+
+            <div class="input-container">
+                <input type="text" placeholder="Электронная почта " id="email">
+            </div>
+
+            <div class="input-container">
+                <input type="text" placeholder="Номер телефона (не обязательно) " id="phone">
+            </div>
+
+            <button id="formButton" type="submit" class="form-button">Получить доступ</button>
+        </form>
     </div>
 </section>
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer-container">
-            <img src="assets/img/logo-black.png" alt="">
-        </div>
+<footer>
+    <div class="icons-container">
+        <a href="#" target="_blank">
+            <img src="assets/images/inst-icon.svg" alt="">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/images/tg-icon.svg" alt="">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/images/wp-icon.svg" alt="">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/images/vk-icon.svg" alt="">
+        </a>
     </div>
 </footer>
 
-<script src="index.js?ver=9"></script>
+<script src="script.js"></script>
 </body>
-
+</html>
