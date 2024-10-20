@@ -55,6 +55,7 @@ section {
   width: 157px;
   height: auto;
   object-fit: contain;
+  opacity: 0.4;
 }
 
 .hero-section {
