@@ -252,13 +252,77 @@ footer .icons-container img {
     flex-direction: column;
     gap: 38px;
   }
+  .reasons-section .container .reason-block {
+    align-items: center;
+  }
   .reasons-section .container .reason-block h3 {
     padding-top: 38px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+  }
+  .reasons-section .container .reason-block p {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 32.5px;
+    text-align: center;
   }
   .reasons-section .container .reason-block:nth-child(1) .line {
     display: none;
   }
   .reasons-section .container .reason-block:nth-child(1) h3 {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    padding-top: 40px;
+    height: auto;
+  }
+  .hero-section {
+    padding: 0;
+  }
+  .hero-section .container .left h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .hero-section .container .left p {
+    font-size: 18px;
+    line-height: 22.5px;
+    padding-top: 24px;
+  }
+  .hero-section .container .left button {
+    margin-top: 57px;
+    height: 69px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .hero-section .container .right img {
+    width: 100%;
+  }
+  .reasons-section .container .reason-block h3 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .reasons-section .container .reason-block p {
+    font-size: 18px;
+    line-height: 22.5px;
+    padding-top: 14px;
+  }
+  .form-section .container .form {
+    padding: 0 20px;
+  }
+  .form-section .container .form .title h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .form-section .container .form .input-container input {
+    font-size: 18px;
+    line-height: 22.5px;
+  }
+  footer {
     padding-top: 0;
   }
 }

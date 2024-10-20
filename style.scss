@@ -315,6 +315,7 @@ footer {
       gap: 38px;
 
       .reason-block {
+        align-items: center;
 
         .line {
 
@@ -322,9 +323,18 @@ footer {
 
         & h3 {
           padding-top: 38px;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 42px;
+          text-align: center;
+
         }
 
         & p {
+          font-size: 26px;
+          font-weight: 300;
+          line-height: 32.5px;
+          text-align: center;
         }
 
       }
@@ -333,7 +343,8 @@ footer {
         .line {
           display: none;
         }
-        & h3{
+
+        & h3 {
           padding-top: 0;
         }
       }
@@ -344,5 +355,131 @@ footer {
 
 
 @media screen and (max-width: 600px) {
+  .header {
+    padding-top: 40px;
+    height: auto;
 
+    .container {
+
+      .logo {
+
+      }
+    }
+  }
+
+  .hero-section {
+    padding: 0;
+
+    .container {
+
+      .left {
+
+        & h1 {
+          font-size: 48px;
+          line-height: 50px;
+
+        }
+
+        & p {
+          font-size: 18px;
+          line-height: 22.5px;
+          padding-top: 24px;
+
+          & span {
+          }
+        }
+
+        & button {
+          margin-top: 57px;
+          height: 69px;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+
+      .right {
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .reasons-section {
+
+    .container {
+
+      .reason-block {
+
+        .line {
+
+        }
+
+        & h3 {
+          font-size: 24px;
+          line-height: 26px;
+
+        }
+
+        & p {
+          font-size: 18px;
+          line-height: 22.5px;
+          padding-top: 14px;
+        }
+
+      }
+
+      .reason-block:nth-child(1) {
+        .line {
+        }
+
+        & h3 {
+        }
+      }
+    }
+  }
+  .form-section {
+
+    .container {
+
+      .form {
+        padding: 0 20px;
+
+        .title {
+          & h2 {
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 50px;
+
+          }
+
+        }
+
+        .input-container {
+
+          & input {
+            font-size: 18px;
+            line-height: 22.5px;
+
+            &::placeholder {
+
+            }
+          }
+        }
+
+        .form-button {
+        }
+      }
+    }
+  }
+  footer {
+    padding-top: 0;
+
+    .icons-container {
+
+      & img {
+      }
+    }
+  }
 }
