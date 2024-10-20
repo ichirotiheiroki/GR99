@@ -322,6 +322,11 @@ footer .icons-container img {
     font-size: 18px;
     line-height: 22.5px;
   }
+  .form-section .container .form .form-button {
+    height: 69px;
+    font-size: 20px;
+    line-height: 25px;
+  }
   footer {
     padding-top: 0;
   }
