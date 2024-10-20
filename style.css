@@ -1,0 +1,266 @@
+@import url("https://fonts.cdnfonts.com/css/yeseva-one");
+@import url("https://fonts.cdnfonts.com/css/geologica");
+:root {
+  --dark-color: #242B2D;
+  --blue-color: #8DEAFF;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6, input, button {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Geologica", sans-serif;
+  color: var(--dark-color);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 60px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.header .container .logo {
+  width: 157px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-section {
+  margin-top: 40px;
+  padding: 5px 0;
+}
+.hero-section .container {
+  display: flex;
+}
+.hero-section .container .left {
+  flex: 1;
+}
+.hero-section .container .left h1 {
+  font-family: Yeseva One, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: left;
+  margin: 0;
+}
+.hero-section .container .left p {
+  font-family: Geologica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align: left;
+  padding-top: 42px;
+  margin: 0;
+}
+.hero-section .container .left p span {
+  background-color: var(--blue-color);
+}
+.hero-section .container .left button {
+  margin-top: 78px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Geologica, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 32.5px;
+  text-align: center;
+  padding: 0;
+  height: 77px;
+  border: none;
+  background: var(--dark-color);
+  color: white;
+}
+.hero-section .container .right {
+  flex: 1;
+}
+.hero-section .container .right img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.reasons-section {
+  padding-top: 100px;
+}
+.reasons-section .container {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+}
+.reasons-section .container .reason-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.reasons-section .container .reason-block .line {
+  width: 49px;
+  height: 7px;
+  background: var(--blue-color);
+  display: block;
+}
+.reasons-section .container .reason-block h3 {
+  font-family: Geologica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  padding-top: 28px;
+}
+.reasons-section .container .reason-block p {
+  font-family: Geologica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27.5px;
+  text-align: left;
+  padding-top: 16px;
+}
+
+.form-section {
+  padding-top: 100px;
+}
+.form-section .container {
+  background: var(--blue-color);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.form-section .container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 512px;
+}
+.form-section .container .form .title h2 {
+  font-family: Yeseva One, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.form-section .container .form .input-container {
+  width: 100%;
+}
+.form-section .container .form .input-container input {
+  width: 100%;
+  height: 50px;
+  font-family: Geologica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27.5px;
+  text-align: center;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid var(--dark-color);
+  background-color: transparent;
+}
+.form-section .container .form .input-container input::placeholder {
+  color: #4A95AB;
+}
+.form-section .container .form .form-button {
+  font-family: Geologica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27.5px;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  height: 72px;
+  border: none;
+  background-color: var(--dark-color);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+footer .icons-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+footer .icons-container img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    max-width: 620px;
+    padding: 0 30px;
+  }
+  .header .container {
+    justify-content: center;
+  }
+  .hero-section .container {
+    flex-direction: column;
+  }
+  .hero-section .container .left h1 {
+    text-align: center;
+  }
+  .hero-section .container .left p {
+    text-align: center;
+  }
+  .hero-section .container .right {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .container .right img {
+    width: 85%;
+  }
+  .reasons-section .container {
+    flex-direction: column;
+    gap: 38px;
+  }
+  .reasons-section .container .reason-block h3 {
+    padding-top: 38px;
+  }
+  .reasons-section .container .reason-block:nth-child(1) .line {
+    display: none;
+  }
+  .reasons-section .container .reason-block:nth-child(1) h3 {
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
