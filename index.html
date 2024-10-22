@@ -72,13 +72,23 @@
             </div>
 
             <div class="input-container">
-                <input type="text" placeholder="Номер телефона (не обязательно) " id="phone">
+                <input type="tel" placeholder="Номер телефона (не обязательно) " id="phone">
+            </div>
+
+            <div class="error">
+                <img src="assets/images/union.svg">
+                <p>Вы заполнили не все поля</p>
             </div>
 
             <button id="formButton" type="submit" class="form-button">Получить доступ</button>
+
+            <div class="complete" id="complete">
+                <img src="assets/images/check.svg" alt="">
+                <h2 id="formMessage" class="form-message">Ваш запрос отправлен!</h2>
+            </div>
         </form>
 
-        <h2 id="formMessage" class="form-message">Заявка принята</h2>
+
     </div>
 </section>
 <footer>
