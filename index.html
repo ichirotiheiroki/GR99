@@ -23,9 +23,9 @@
                 в своё состояние
             </h1>
             <p><span>Энергия</span> — ваш главный актив. Это не просто ресурс, а фундамент вашего успеха.</p>
-            <a href="#formSection">
-                <button>Выбрать стратегию</button>
-            </a>
+
+            <button id="strategyId">Выбрать стратегию</button>
+
         </div>
         <div class="right">
             <img class="illustration" src="assets/images/illustration.png" alt="">
@@ -64,11 +64,11 @@
             </div>
 
             <div class="input-container">
-                <input type="text" placeholder="Имя" id="name">
+                <input required minlength="3" type="text" placeholder="Имя" id="name">
             </div>
 
             <div class="input-container">
-                <input type="text" placeholder="Электронная почта " id="email">
+                <input required minlength="6" type="text" placeholder="Электронная почта " id="email">
             </div>
 
             <div class="input-container">
@@ -77,6 +77,8 @@
 
             <button id="formButton" type="submit" class="form-button">Получить доступ</button>
         </form>
+
+        <h2 id="formMessage" class="form-message">Заявка принята</h2>
     </div>
 </section>
 <footer>

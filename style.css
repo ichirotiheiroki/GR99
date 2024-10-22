@@ -159,6 +159,15 @@ section {
   display: flex;
   justify-content: center;
 }
+.form-section .container .form-message {
+  font-family: Yeseva One, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  display: none;
+  padding: 60px 0;
+}
 .form-section .container .form {
   display: flex;
   flex-direction: column;
@@ -327,6 +336,11 @@ footer .icons-container img {
     height: 69px;
     font-size: 20px;
     line-height: 25px;
+  }
+  .form-section .container .form-message {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
   }
   footer {
     padding-top: 0;

@@ -37,10 +37,19 @@ document.getElementById('submitForm').addEventListener('submit', function (event
         .then(response => response.json())
         .then(result => {
             console.log('Success:', result);
-
+            document.getElementById('submitForm').style.display = 'none';
+            document.getElementById('formMessage').style.display = 'block';
         })
         .catch(error => {
             console.error('Error:', error);
 
         });
 });
+
+document.getElementById('strategyId').addEventListener('click', () => {
+    scrollTo('formSection')
+})
+
+function scrollTo(id) {
+    document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+}
