@@ -105,6 +105,7 @@ section {
   border: none;
   background: var(--dark-color);
   color: white;
+  cursor: pointer;
 }
 .hero-section .container .right {
   flex: 1;
@@ -245,6 +246,7 @@ section {
   height: 72px;
   border: none;
   background-color: var(--dark-color);
+  cursor: pointer;
 }
 
 footer {
