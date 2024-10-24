@@ -98,9 +98,3 @@ document.getElementById('strategyId').addEventListener('click', () => {
 function scrollTo(id) {
     document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 }
-
-
-const linkElement = document.querySelector('link[rel="stylesheet"]');
-const timestamp = new Date().getTime();
-const href = linkElement.getAttribute('href').split('?')[0];
-linkElement.setAttribute('href', `${href}?ver=${timestamp}`);
