@@ -3,6 +3,7 @@
 
 :root {
   --dark-color: #242B2D;
+  --petrole-color: #275969;
   --blue-color: #8DEAFF;
   --red-color: #B22F2F;
 }
@@ -174,6 +175,13 @@ section {
   }
 }
 
+.qr-section{
+  display: none;
+  .container {
+
+  }
+}
+
 .form-section {
   padding-top: 100px;
 
@@ -181,7 +189,7 @@ section {
     background: var(--blue-color);
     padding: 40px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .form {
       display: flex;
@@ -255,6 +263,7 @@ section {
           border: none;
           border-bottom: 1px solid var(--dark-color);
           background-color: transparent;
+          color: var(--petrole-color);
 
           &::placeholder {
             color: #4A95AB;
@@ -287,6 +296,14 @@ section {
         border: none;
         background-color: var(--dark-color);
         cursor: pointer;
+      }
+    }
+
+    .form-qr {
+      display: flex;
+
+      & img {
+        width: 226px;
       }
     }
   }
@@ -407,6 +424,34 @@ footer {
     }
   }
 
+
+  .qr-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img{
+        width: 226px;
+        height: 226px;
+      }
+    }
+  }
+
+  .form-section {
+
+    .container {
+      justify-content: center;
+
+
+      .form-qr {display: none;
+      }
+    }
+  }
+
 }
 
 
@@ -498,7 +543,6 @@ footer {
   .form-section {
 
     .container {
-
       .form {
         padding: 0 20px;
 
@@ -536,6 +580,8 @@ footer {
 
         }
       }
+
+
     }
   }
   footer {
